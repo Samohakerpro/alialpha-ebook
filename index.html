@@ -20,17 +20,22 @@
         </div>
         <div class="download">
             <h3>Téléchargez Votre eBook Maintenant !</h3>
-            <form action="send_email.php" method="POST" id="ebookForm">
-                <input type="text" name="lastname" placeholder="Votre Nom" required>
-                <input type="text" name="name" placeholder="Votre Prénom" required>
-                <input type="email" name="email" placeholder="Votre Email" required>
+            <form id="ebookForm">
+                <input type="text" name="lastname" id="lastname" placeholder="Votre Nom" required>
+                <input type="text" name="name" id="name" placeholder="Votre Prénom" required>
+                <input type="email" name="email" id="email" placeholder="Votre Email" required>
                 <button type="submit">Téléchargez</button>
             </form>
+            <p id="responseMessage"></p>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2024 Alialpha - Tous droits réservés</p>
     </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
